@@ -17,10 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gps_app">
         <activity
-            android:name=".GpsActivity"
+            android:name=".views.GpsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

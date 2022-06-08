@@ -1,8 +1,10 @@
-package com.example.gps_app;
+package com.example.gps_app.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.gps_app.R;
 
 public class GpsActivity extends AppCompatActivity {
 
