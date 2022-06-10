@@ -11,8 +11,9 @@ public class DBService {
         dbHelper = new DBHelper(context);
     }
 
-    public boolean create(){
-        return true;
+    public void create(String sql)
+    {
+        db.execSQL(sql);
     }
 
 }

@@ -16,7 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        String sql = "create table LocationData(id integer primary key, date long);";
+        String sql = "create table LocationData(id integer primary key, date long, bool isSended);";
         db.execSQL(sql);
     }
 

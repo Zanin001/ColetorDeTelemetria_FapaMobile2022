@@ -19,6 +19,7 @@ import android.widget.EditText;
 import com.example.gps_app.R;
 
 import com.example.gps_app.models.Login;
+import com.example.gps_app.receiver.GPSBroadcastReceiver;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         InitializeObjects();
 
-        //br = new GPSBroadcastReceiver();
-        IntentFilter intf = new IntentFilter("com.example.gps_app.GPS_START");
+        br = new GPSBroadcastReceiver();
+        IntentFilter intf = new IntentFilter("android.net.wifi.WIFI_STATE_CHANGED");
+        //IntentFilter intf2 = new IntentFilter()
+
+        registerReceiver(br, intf);
 
         ActivityResultLauncher<String[]> locationPermissionRequest = registerForActivityResult(
                 new ActivityResultContracts.RequestMultiplePermissions(), result -> {
