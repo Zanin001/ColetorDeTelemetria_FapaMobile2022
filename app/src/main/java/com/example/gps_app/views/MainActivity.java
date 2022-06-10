@@ -17,9 +17,8 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.gps_app.R;
-import com.example.gps_app.receiver.GPSBroadcastReceiver;
 
-import models.Login;
+import com.example.gps_app.models.Login;
 
 public class MainActivity extends AppCompatActivity {
 

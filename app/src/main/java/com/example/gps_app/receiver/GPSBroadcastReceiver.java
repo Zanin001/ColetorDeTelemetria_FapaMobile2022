@@ -1,6 +1,17 @@
 package com.example.gps_app.receiver;
 
-public class GPSBroadcastReceiver {
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 
-    public GPSBroadcastReceiver(){}
+public class GPSBroadcastReceiver extends BroadcastReceiver {
+
+    public static final String TAG = "GPSBroadcastReceiver";
+
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+
+    }
 }

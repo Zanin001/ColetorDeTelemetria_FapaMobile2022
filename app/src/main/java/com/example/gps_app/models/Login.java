@@ -1,7 +1,5 @@
-package models;
+package com.example.gps_app.models;
 
-import java.util.Dictionary;
-import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +10,8 @@ public class Login {
         USERS.put("admin", "admin123");
         USERS.put("operator", "operator123");
     }
+
+    private String USER_LOGGED;
 
     private String User;
     private String Password;
@@ -46,6 +46,7 @@ public class Login {
         if(!(Password.equals(USERS.get(User))))
             return false;
 
+        USER_LOGGED = User;
         return true;
     }
 }
